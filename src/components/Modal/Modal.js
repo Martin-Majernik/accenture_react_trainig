@@ -1,6 +1,6 @@
-import React, { Component, createRef, PureComponent } from "react";
-import Button from "../Button/Button";
-import Input from "../Input/Input";
+import React, { Component, createRef, PureComponent } from 'react';
+import Button from '../Button/Button';
+import Input from '../Input/Input';
 
 // RULE
 // Component will re-render only when prop change or state change
@@ -62,15 +62,15 @@ class Modal extends Component {
   // fetch data
   // manipulat DOM
   componentDidMount() {
-    document.addEventListener("mousemove", () => {
-      console.log("mousemove");
+    document.addEventListener('mousemove', () => {
+      console.log('mousemove');
     });
 
     this.interval = setInterval(() => {
-      console.log("interval");
+      console.log('interval');
     }, 1000);
 
-    this.h1Ref.current.style = "color:green";
+    this.h1Ref.current.style = 'color:green';
   }
 
   getSnapshotBeforeUpdate() {
@@ -82,7 +82,7 @@ class Modal extends Component {
   }
 
   componentWillUnmount() {
-    document.removeEventListener("mousemove");
+    document.removeEventListener('mousemove');
     clearInterval(this.interval);
   }
 

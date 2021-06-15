@@ -1,7 +1,7 @@
 const style = {
   h1: {
-    backgroundColor: "red",
-    color: "white",
+    backgroundColor: 'red',
+    color: 'white',
   },
 };
 

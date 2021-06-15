@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import shallowCompare from "react-addons-shallow-compare";
+import React, { Component } from 'react';
+import shallowCompare from 'react-addons-shallow-compare';
 
 export default class Input extends Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -7,7 +7,7 @@ export default class Input extends Component {
   }
 
   render() {
-    console.log("input component");
+    console.log('input component');
     return <div>input component</div>;
   }
 }
